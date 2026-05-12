@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+header { text-align: center; margin-bottom: 20px; }
+h1 { color: #f5cf6c; }
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+svg {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.axis-label { fill: #e0e0e0; font-size: 12px; }
+.domain, .tick line { stroke: #555; }
+.tick text { fill: #aaa; }
+
+/* --- Slider Styling --- */
+#timeSlider {
+    width: 300px; /* Makes the slider significantly wider */
+    max-width: 90%; /* Ensures it shrinks on smaller screens so it doesn't break the layout */
+    cursor: pointer;
+    margin-top: 10px;
+}
